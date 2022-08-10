@@ -14,6 +14,31 @@ a{
     text-decoration: none;
     
 }
+p{
+    text-align: left;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    line-height: 1.9rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-title{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin: 10px;
+    letter-spacing: .2rem;
+    display: block;
+    text-align: center;
+
+}
+.section-title span{
+    color: crimson;
+}
 
 .container{
     min-height: 100vh;
@@ -131,7 +156,9 @@ a{
 #service{
     align-items: center;
 }
-
+#service p{
+    text-align: center;
+}
 #service .service{
     flex-direction:column;
     /* text-align: center; */
@@ -139,20 +166,6 @@ a{
     max-width: 1500px;
     margin: 0;
     padding: 100px 0;
-}
-#service .section-title{
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 300;
-    color: black;
-    margin: 10px;
-    letter-spacing: .2rem;
-    display: block;
-    text-align: center;
-
-}
-#service .section-title span{
-    color: crimson;
 }
 
 #service .service-top p{
@@ -169,6 +182,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 #service .service-item{
@@ -183,6 +197,7 @@ a{
     margin: 10px 5%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 #service .service-item::after{
@@ -192,12 +207,61 @@ a{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: .8;
     z-index: -1;
 }
+
+#service .service-bottom .icon{
+    height:40px;
+    width: 40px;
+    margin-bottom: 20px;
+}
+#service .service-item h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#service .service-item p{
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+}
+#service .service-bottom .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
 /* End Service Section */
 
+/* start projects section */
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+}
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+
+#projects .projects-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* end projects section */
 
 /* start Keyframes */
 @keyframes overlay{
