@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+img::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+p::before{
+    display: block;
+    color: white;
+    content: 'hello';
+    background:red;
+    font-size: 30px;
+    font-weight: 900;
+}
+p::after{
+    content: 'cya';
+    color: white;
+    display: block;
+    background:red;
+    font-size: 30px;
+    font-weight: 900;
+}
