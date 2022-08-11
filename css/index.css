@@ -39,7 +39,11 @@ img{
 .section-title span{
     color: crimson;
 }
-
+.icon{
+    height:40px;
+    width: 40px;
+    margin-bottom: 20px;
+}
 .container{
     min-height: 100vh;
     width: 100%;
@@ -212,11 +216,7 @@ img{
     z-index: -1;
 }
 
-#service .service-bottom .icon{
-    height:40px;
-    width: 40px;
-    margin-bottom: 20px;
-}
+
 #service .service-item h2{
     font-size: 2rem;
     margin-bottom: 10px;
@@ -377,6 +377,60 @@ img{
 
 }
 /* End of about section */
+
+/* start contact section */
+#contact .contact{
+    flex-direction: column;
+    max-width:1200px ;
+    margin: 0 auto;
+}
+
+#contact .contact-items{
+    width: 400px;
+    
+}
+
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+
+}
+
+#contact .contact-item{
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    align-items: center;
+    box-shadow:0px 0px 18px 0  #0000002c;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s ease box-shadow;
+}
+
+#contact  .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+#contact .contact-info{
+    align-items: center;
+    text-align: center;
+}
+/* end contact section */
+
 /* start Keyframes */
 @keyframes overlay{
     50%{
