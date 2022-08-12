@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quick-practice.css">
-    <title>Practice</title>
+    <title>Animated Hamburger</title>
 </head>
 <body>
-    <p>Here is some generic content</p>
+    <div class="container">
+        <div class="ham">
+            <div class="bar">
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const ham = document.querySelector('.container .ham')
+        ham.addEventListener('click', ()=>{
+            ham.classList.toggle('close')
+        })
+    </script>
 </body>
 </html>

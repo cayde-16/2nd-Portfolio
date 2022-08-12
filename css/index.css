@@ -116,10 +116,15 @@ img{
     height:100vh;
     top: 0;
     left: 0;
+    left: 100%;
     z-index: 1;
     overflow-x: hidden;
+    transition: .5s ease left;
     
 
+}
+#header .nav-list ul.active{
+    left: 20%;
 }
 #header .nav-list ul a{
     font-size: 2.5rem;
@@ -154,6 +159,69 @@ img{
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: .5rem;
    
+}
+#header .nav-list ul li:hover a{
+    color: crimson;
+}
+#header .hamburger{
+    height:60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(.8);
+    margin-right: 20px;
+}
+#header .hamburger::after{
+    position: absolute;
+    content: '';
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation:hamburger_pulse 1s ease infinite ;
+}
+
+#header .hamburger .bar{
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+
+#header .hamburger .bar::before,
+#header .hamburger .bar::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    transition: .3s ease;
+    transition-property: top, bottom;
+    background-color: white;
+}
+
+#header .hamburger.active .bar::after{
+    top: 0;
+
+}
+
+#header .hamburger.active .bar::before{
+    bottom: 0;
+}
+#header .hamburger .bar::before{
+    bottom: 8px;
+}
+
+#header .hamburger .bar::after{
+    top: 8px;
 }
 /* end header secton */
 
@@ -566,6 +634,17 @@ img{
 /* end footer section */
 
 /* start Keyframes */
+@keyframes hamburger_pulse{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity:0;
+        transform: scale(1.2);
+
+    }
+}
 @keyframes overlay{
     50%{
         width: 100%;
@@ -706,6 +785,29 @@ img{
 
 /* start Media Query **Desktop** */
 @media only screen and (min-width:1200px){
+    /* header section */
+    #header .hamburger{
+        display: none;
+    }
+    #header .nav-list ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    #header .nav-list ul li{
+        display: inline-block;
+        margin: auto 10px;
+    }
+    #header .nav-list ul li a{
+        font-size: 1.8rem;
+    }
+    #header .nav-list ul a::after{
+        display: none;
+    }
+    /* header section */
     #service .service-bottom .service-item{
         flex-basis: 22%;
         margin: 1.5%;
