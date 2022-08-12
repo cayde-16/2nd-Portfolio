@@ -92,6 +92,7 @@ img{
 #header .header{
     min-height: 8vh;
     background-color:rgba(31, 30, 30,  0.24) ;
+    transition: .3s ease background-color;
 }
 
 #header .nav-bar{
@@ -227,7 +228,7 @@ img{
 
 /* Start Hero Section */
 #hero{
-    background-image:url(/images/hero-bg.png);
+    background-image:url(/images/coding-background.webp);
     background-size: cover;
     background-position: top center;
     position: relative;
