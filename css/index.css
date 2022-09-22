@@ -12,6 +12,7 @@ html{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
     
 }
 p{
@@ -234,6 +235,9 @@ img{
     position: relative;
     z-index: 1;
 
+}
+#hero #viewProject{
+    cursor: pointer;
 }
 
 #hero .hero{
@@ -460,6 +464,7 @@ img{
     flex-basis: 50%;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 #projects .project-img::after{
     content: '';
@@ -469,7 +474,7 @@ img{
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0.7;
+    opacity: 0.3;
 
 }
 #projects .project-img img{
@@ -478,6 +483,27 @@ img{
 #projects .projects-item:hover .project-img img{
     cursor: pointer;
     transform: scale(1.1);
+}
+
+#projects .demo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+}
+#projects .demo button a:visited{
+    color: white;
+}
+
+#projects .demo button{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-style: solid;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
 }
 /* end projects section */
 

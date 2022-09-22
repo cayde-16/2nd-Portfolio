@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>My Site</title>
+    <title>CadesWeb</title>
 </head>
 <body>
     <!-- <script src="css/app.js"></script> -->
@@ -28,10 +28,12 @@
 
                         </div>
                             <ul>
-                                <li><a href="#" data-after="These">Home</a></li>
-                                <li><a href="#" data-after="Links">Services</a></li>
-                                <li><a href="#" data-after="Don't">Projects</a></li>
-                                <li><a href="#" data-after="Work">Contact</a></li>
+                                <li id="homeScroll"><a data-after="COOL">Home</a></li>
+                                <li id="serviceScroll"><a data-after="SMALL">Services</a></li>
+                                <li id="projectScroll"><a data-after="LITTLE">Projects</a></li>
+                                <li id="aboutScroll"><a data-after="EGG">About</a></li>
+                                <li id="contactScroll"><a data-after="EASTER">Contact</a></li>
+                                
                             </ul>
                     </div>
                     
@@ -46,7 +48,7 @@
                     <h1>Hello,<span></span></h1> 
                     <h1>My name is<span></span></h1>
                     <h1>Cade Heck<span></span></h1>
-                    <a href="" type="button" class="cta">Portfolio</a>  
+                    <button id="viewProject" type="button" class="cta">View  Projects</butt>  
                 </div>
             </div>
         </section>
@@ -59,37 +61,38 @@
             <div class="service container">
                 <div class="service-top">
                     <h1 class="section-title">Serv<span>I</span>ces</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                         molestiae quas vel sint commodi repudiandae consequuntur voluptatum.  
-                    </p>
+                    </p> -->
                 </div>
                    
                 <div class="service-bottom">
                     <div class="service-item">
 
                         <div class="icon">
-                            <img src="images/icons8-python-64.png" alt="">
+                            <img src="images/icons8-frontend-64.png" alt="">
                         </div>
 
-                        <h2>Web Design</h2>
+                        <h2>Frontend Development</h2>
                         <p> 
-                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                            numquam blanditiis harum  praesentium
-                            optio, eaque rerum! 
+                            Tools used for Frontend Development:<br><br>
+                            * HTML<br>* CSS<br>* JavaScript<br>* React
+
                         </p>
                     </div>
 
                     <div class="service-item">
 
                         <div class="icon">
-                            <img src="images/icons8-python-64.png" alt="">
+                            <a href="">
+
+                            </a>
+                            <img src="images/icons8-website-64.png" alt="">
                         </div>
 
-                        <h2>Web Design</h2>
+                        <h2>Backend Development</h2>
                         <p> 
-                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                            numquam blanditiis harum  praesentium
-                            optio, eaque rerum! 
+                            Tools used for Backend Development:<br><br>* python <br>* Django<br> * FastApi <br> * Javascript
                         </p>
                     </div>
 
@@ -97,19 +100,19 @@
                     <div class="service-item">
 
                         <div class="icon">
-                            <img src="images/icons8-python-64.png" alt="">
+                            <img src="images/icons8-website-db-64.png" alt="">
                         </div>
 
-                        <h2>Web Design</h2>
+                        <h2>Fullstack Development</h2>
                         <p> 
-                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                            numquam blanditiis harum  praesentium
-                            optio, eaque rerum! 
+                            Tools used for Fullstack Development: 
+                            <br>* Python <br>* Javascrript<br>* HTML <br>* CSS <br>* React and more!
+                        
                         </p>
                     </div>
 
 
-                    <div class="service-item">
+                    <!-- <div class="service-item">
 
                         <div class="icon">
                             <img src="images/icons8-python-64.png" alt="">
@@ -120,7 +123,7 @@
                             molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                             numquam blanditiis harum  praesentium optio, eaque rerum! 
                         </p>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -144,47 +147,68 @@
                     <div class="all-projects">
                         <div class="projects-item">
                             <div class="project-info">
-                               <h1>Project 1</h1>
-                               <h2>Coding is a super power</h2>
-                               <p>molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                                numquam blanditiis harum  praesentium
-                                optio, eaque rerum! </p> 
+                               <h1>Ecommerce </h1>
+                               <h2>Red Store - Sporting Goods</h2>
+                               <p>
+                                This project deals with developing an e-commerce website. 
+                                It provides the user with a catalog of different Attire available for purchase in the store. 
+                                </p> 
+                               <!-- https://github.com/cayde-16/Ecommerce-Project -->
+                                <div class="demo">
+                                    <button>
+                                        <a target="_blank" href="https://red-sporting1.herokuapp.com/"> Demo</a>
+                                    </button>     
+                                    <button>
+                                        <a target="_blank" href="https://github.com/cayde-16/Ecommerce-Project"> Code</a>
+                                        
+                                    </button>
+                                </div>
                             </div>
+
+                            
     
                             <div class="project-img">
-                                <img src="/images/img-1.png" alt="">
+                                <img src="/images/red-store.jpg">
                             </div>
                         </div>
     
                         <div class="projects-item">
                             <div class="project-info">
-                               <h1>Project 2</h1>
-                               <h2>Coding is a super power</h2>
-                               <p>molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                                numquam blanditiis harum  praesentium
-                                optio, eaque rerum! </p> 
+                               <h1>Community Blog Site</h1>
+                               <h2>Members Only Site</h2>
+                               <p>
+                                    This project deals with developing a Blog App. 
+                                    It enables users to create, search, and have discussions about specific topics or opinions.
+                                </p> 
+
+                                <div class="demo">
+                                    <button>
+                                        <a target="_blank" href="https://memberss-only.herokuapp.com/"> Demo</a>
+                                    </button>     
+                                    <button>
+                                        <a target="_blank" href="https://github.com/cayde-16/Blog-Project"> Code</a>
+                                        
+                                    </button>
+                                </div>
                             </div>
     
                             
                             <div class="project-img">
-                                <img src="/images/img-1.png" alt="">
+                                <img src="/images/blog-site.jpg" alt="">
                             </div>
                         </div>
-    
+<!--     
                         <div class="projects-item">
                             <div class="project-info">
-                               <h1>Project 3</h1>
-                               <h2>Coding is a super power</h2>
-                               <p>molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                                numquam blanditiis harum  praesentium
-                                optio, eaque rerum! </p> 
+                               <h1>Social Media </h1>
+                               <h2>Project Coming Soon </p> 
                             </div>
     
                             
                             <div class="project-img">
-                                <img src="/images/img-1.png" alt="">
+                                <img src="/images/coming-soon.jpg" alt="">
                             </div>
-                        </div>
+                        </div> -->
                     </div>   
                 </div>
             </div>
@@ -198,7 +222,7 @@
 
                 <div class="col-left">
                     <div class="about-img">
-                        <img src="images/img-2.png" alt="">
+                        <img src="images/linked_in_profile_pic2.jpg" alt="">
                     </div>                    
                 </div>
 
@@ -212,7 +236,7 @@
                         <h2 class="">Software Engineer</h2>
                         <p>
                             My name is Cade Heck and I am a Software Engineer. I started learning to code my Junior year of highschool and fell in love with it ever since.
-                            With a growing passion in Software Engineer and always looking to futher increase my Coding skills, I became am a Enthusiastic and Self-Driven Software Developer. 
+                            With a growing passion as Software Engineer and always looking to futher increase my Coding skills, in doing so I became am a Enthusiastic and Self-Driven Software Developer. 
                             I try to learn something about everything and everything about something.
                         </p>
                         <a target="_blank" href="images/cadeResume.pdf" class="cta">Download Resume</a>
@@ -251,7 +275,7 @@
 
                         <div class="contact-info">
                             <h1>Email</h1>
-                            <h2>heck.cadeagmail.com</h2>
+                            <h2>heck.cadea@gmail.com</h2>
                         </div>
                     </div>
                 </div>
